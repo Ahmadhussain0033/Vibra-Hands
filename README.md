@@ -40,8 +40,10 @@ Vibra Hands is an innovative gesture-based musical interface that allows users t
 
 - **Multi-User Collaboration** – Jam with other Vibra Hands users in real time.
 - **AI-Assisted Performance** – Smart musical accompaniment based on user gestures.
-
-## Contribution & Development
+- Add a mike and other stuff so you can control the volume of mike, pitch, reverb and others with hands and use hands to use voice changer effects and AI voices
+- add type of shoes to this as well tho idk how that will work
+  
+## Contribution & Developmen
 
 Vibra Hands is an open-source project, and contributions are welcome! If you're interested in helping develop the hardware, software, or gesture-mapping algorithms, feel free to open an issue or submit a pull request.
 
