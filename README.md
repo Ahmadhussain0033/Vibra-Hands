@@ -19,32 +19,36 @@ Vibra Hands is an innovative gesture-based musical interface that allows users t
 
 ---
 
-### 🔧 Components Used  
+### 📌 Vibra Hands – Components List  
 
-| Component | Purpose |
-|-----------|---------|
-| **IMU (MPU6050 / MPU9250 / BNO055)** | Tracks hand movement, tilt, and speed. |
-| **Flex Sensors** | Detects finger bending for gesture recognition. |
-| **Force Sensors (FSR402 / Tekscan FlexiForce)** | Measures impact force when the glove hits an object. |
-| **Time-of-Flight (VL53L0X) / Ultrasonic Sensor (HC-SR04)** | Tracks height and distance from the starting point (0,0,0). |
-| **ESP32 (Microcontroller + Bluetooth/WiFi)** | Processes sensor data and wirelessly transmits it. |
-| **Haptic Feedback (DRV2605L + Vibration Motors)** | Provides vibration response for interactions. |
-| **Rechargeable Battery (Li-Po / Li-Ion)** | Powers the glove for wireless operation. |
+#### 🛠️ Sensors & Electronics  
+
+| **Component** | **Quantity** | **Purpose** |
+|--------------|------------|-------------|
+| **IMU (BNO086 or MPU6050)** | 1 per glove | Tracks hand motion, acceleration, and tilt. |
+| **Force Sensitive Resistor (FSR402/FSR406)** | 5 per glove | Measures pressure on fingers and palm. |
+| **Piezo Sensor (LDT0-028K)** | 1 per glove | Detects rapid impacts and vibrations. |
+| **Haptic Feedback Motor (Vibration Motor)** | 2 per glove | Provides physical feedback for user actions. |
+| **Microcontroller (ESP32 or Arduino Nano 33 BLE)** | 1 per glove | Processes sensor data and sends outputs. |
+
+#### 🔌 Power & Connectivity  
+
+| **Component** | **Quantity** | **Purpose** |
+|--------------|------------|-------------|
+| **Battery (LiPo 3.7V 1000mAh)** | 1 per glove | Powers the system wirelessly. |
+| **Battery Charging Module (TP4056)** | 1 per glove | Enables safe battery charging. |
+| **Wireless Module (ESP-NOW / Bluetooth / NRF24L01)** | 1 per glove | Sends data wirelessly to external devices. |
+
+
+## 📌 Summary of What This Setup Can Detect  
+✅ **Hand Motion (IMU):** Tracks movement, speed, and tilt.  
+✅ **Soft & Hard Presses (FSR):** Detects how much force is applied.  
+✅ **Rapid Hits & Vibrations (Piezo Sensor):** Measures impact intensity.  
+✅ **Haptic Feedback:** Provides vibration response.  
+✅ **Wireless Control:** Sends real-time data over Bluetooth/WiFi.  
 
 ---
-
-## 📡 How It Works  
-- The **IMU** continuously tracks the hand's **tilt, rotation, and movement**.  
-- The **flex sensors** detect **finger bending** to recognize gestures.  
-- The **ToF sensor** helps measure **height** to ensure precise tracking.  
-- The **force sensors** detect **impact force** for physical interactions.  
-- The **ESP32 microcontroller** processes all sensor data and **transmits it wirelessly**.  
-- The **haptic feedback system** provides **vibrations** for responses.  
-
-
----
-
-### **Software**
+## **Software**
 
 - **Machine Learning Gesture Recognition**
   - Train an AI model to recognize hand movements and gestures.
