@@ -17,13 +17,32 @@ Vibra Hands is an innovative gesture-based musical interface that allows users t
 
 ## Implementation Plan
 
-### **Hardware**
+---
 
-- Smart gloves equipped with:
-  - IMU (Inertial Measurement Unit) sensors for motion tracking.
-  - Pressure sensors for surface interaction.
-  - Capacitive or flex sensors for detecting finger positions.
-  - Haptic feedback for real-time response.
+### 🔧 Components Used  
+
+| Component | Purpose |
+|-----------|---------|
+| **IMU (MPU6050 / MPU9250 / BNO055)** | Tracks hand movement, tilt, and speed. |
+| **Flex Sensors** | Detects finger bending for gesture recognition. |
+| **Force Sensors (FSR402 / Tekscan FlexiForce)** | Measures impact force when the glove hits an object. |
+| **Time-of-Flight (VL53L0X) / Ultrasonic Sensor (HC-SR04)** | Tracks height and distance from the starting point (0,0,0). |
+| **ESP32 (Microcontroller + Bluetooth/WiFi)** | Processes sensor data and wirelessly transmits it. |
+| **Haptic Feedback (DRV2605L + Vibration Motors)** | Provides vibration response for interactions. |
+| **Rechargeable Battery (Li-Po / Li-Ion)** | Powers the glove for wireless operation. |
+
+---
+
+## 📡 How It Works  
+- The **IMU** continuously tracks the hand's **tilt, rotation, and movement**.  
+- The **flex sensors** detect **finger bending** to recognize gestures.  
+- The **ToF sensor** helps measure **height** to ensure precise tracking.  
+- The **force sensors** detect **impact force** for physical interactions.  
+- The **ESP32 microcontroller** processes all sensor data and **transmits it wirelessly**.  
+- The **haptic feedback system** provides **vibrations** for responses.  
+
+
+---
 
 ### **Software**
 
@@ -43,7 +62,7 @@ Vibra Hands is an innovative gesture-based musical interface that allows users t
 - Add a mike and other stuff so you can control the volume of mike, pitch, reverb and others with hands and use hands to use voice changer effects and AI voices
 - add type of shoes to this as well tho idk how that will work
   
-## Contribution & Developmen
+## Contribution & Development
 
 Vibra Hands is an open-source project, and contributions are welcome! If you're interested in helping develop the hardware, software, or gesture-mapping algorithms, feel free to open an issue or submit a pull request.
 
