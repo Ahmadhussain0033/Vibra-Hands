@@ -39,6 +39,7 @@ Vibra Hands is an innovative gesture-based musical interface that allows users t
 | **Battery Charging Module (TP4056)** | 1 per glove | Enables safe battery charging. |
 | **Wireless Module (ESP-NOW / Bluetooth / NRF24L01)** | 1 per glove | Sends data wirelessly to external devices. |
 
+---
 
 ## 📌 Summary of What This Setup Can Detect  
 ✅ **Hand Motion (IMU):** Tracks movement, speed, and tilt.  
