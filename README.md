@@ -25,7 +25,7 @@ Vibra Hands is an innovative gesture-based musical interface that allows users t
 
 | **Component** | **Quantity** | **Purpose** |
 |--------------|------------|-------------|
-| **IMU (BNO086 or MPU6050)** | 1 per glove | Tracks hand motion, acceleration, and tilt. |
+| **IMU (BNO086 or MPU6050)** | 6 per glove | Tracks hand motion, acceleration, and tilt. |
 | **Force Sensitive Resistor (FSR402/FSR406)** | 6 per glove | Measures pressure on fingers and palm. |
 | **Piezo Sensor (LDT0-028K)** | 1 per glove | Detects rapid impacts and vibrations. |
 | **Haptic Piezo Motor (Vibration Motor)** | 1 per glove | Provides physical feedback for user actions on the palm. |
