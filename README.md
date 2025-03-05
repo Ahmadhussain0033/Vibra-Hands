@@ -23,21 +23,16 @@ Vibra Hands is an innovative gesture-based musical interface that allows users t
 
 #### 🛠️ Sensors & Electronics  
 
-| **Component** | **Quantity** | **Purpose** |
-|--------------|------------|-------------|
-| **IMU (BNO086 or MPU6050)** | 6 per glove | Tracks hand motion, acceleration, and tilt. |
-| **Force Sensitive Resistor (FSR402/FSR406)** | 6 per glove | Measures pressure on fingers and palm. |
-| **Piezo Sensor (LDT0-028K)** | 1 per glove | Detects rapid impacts and vibrations. |
-| **Haptic Piezo Motor (Vibration Motor)** | 1 per glove | Provides physical feedback for user actions on the palm. |
-| **Microcontroller (ESP32 or Arduino Nano 33 BLE)** | 1 per glove | Processes sensor data and sends outputs. |
-
-#### 🔌 Power & Connectivity  
-
-| **Component** | **Quantity** | **Purpose** |
-|--------------|------------|-------------|
-| **Battery (LiPo 3.7V 1000mAh)** | 1 per glove | Powers the system wirelessly. |
-| **Battery Charging Module (TP4056)** | 1 per glove | Enables safe battery charging. |
-| **Wireless Module (ESP-NOW / Bluetooth / NRF24L01)** | 1 per glove | Sends data wirelessly to external devices. |
+| **Component**                                                | **Quantity per Glove**        | **Brand / Model**                       | **Weight (g)**                   | **Dimensions (mm)**                     | **Purpose**                                                                                                  |
+|--------------------------------------------------------------|-------------------------------|----------------------------------------|----------------------------------|-----------------------------------------|-------------------------------------------------------------------------------------------------------------|
+| **IMU (BNO086)**                                              | 6                             | **Hillcrest Labs BNO086**               | ~1.2 each                        | 15x15x2                                | Tracks hand motion, acceleration, and tilt.                                                                  |
+| **Piezo Force Sensor (KSY Series)**                           | 6                             | **TDK KSY-15**                          | ~0.5 each                        | 10x10x0.5                              | Measures both **pressure and vibration** on fingers and palm.                                                |
+| **Haptic Piezo Motor (Vibration Motor)**                      | 1                             | **Precision Microdrives 307-100**       | ~1.5                              | 8x3                                   | Provides physical feedback for user actions on the palm.                                                     |
+| **Microcontroller (ESP32)**                                   | 1                             | **Espressif Systems ESP32-WROOM-32**    | ~5                                | 25x18x3                                | Processes sensor data and sends outputs.                                                                    |
+| **Wireless Module (ESP-NOW)**                                 | Integrated in ESP32           | **Built-in ESP32**                      | —                                 | —                                      | Sends data wirelessly to external devices.                                                                  |
+| **Flexible LiPo Battery Strips (600mAh each)**                | 3 (parallel connection)       | **LG Chem JH3 Cell Strips**             | ~8 each                          | 60x20x2                                | Provides **1800mAh** total for 3–4 hours of usage.                                                          |
+| **Battery Charging Module (TP4056)**                          | 1                             | **TP4056 with USB-C input**             | ~2                                | 25x17x2                                | Safe charging for LiPo strips with **overcharge protection**.                                                |
+| **Protection Circuit Module (PCM)**                           | 1                             | **Generic 3.7V 1S PCM (20x8x3 mm)**    | ~1                                | 20x8x3                                 | Prevents **over-discharge, overcurrent, and short circuits** for LiPo strips.                                |
 
 ---
 
