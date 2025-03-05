@@ -34,7 +34,7 @@ Vibra Hands is an innovative gesture-based musical interface that allows users t
 | **Microcontroller (ESP32 WROVER)**                                   | 1                             | **ESP32 WROVER**    | ~5                                | 31x18x3                                | Processes sensor data and sends outputs.                                                                    |
 | **Flexible LiPo Battery Strips (600mAh each)**                | 3 (parallel connection)       | **LG Chem JH3 Cell Strips**             | ~8 each                          | 60x20x2                                | Provides **1800mAh** total for 3–4 hours of usage.                                                          |
 | **Battery Charging Module (TP4056)**                          | 1                             | **TP4056 with USB-C input**             | ~2                                | 25x17x2                                | Safe charging for LiPo strips with **overcharge protection**.                                                |
-| **Protection Circuit Module (PCM)**                           | 1                             | **Generic 3.7V 1S PCM (20x8x3 mm)**    | ~1                                | 20x8x3                                 | Prevents **over-discharge, overcurrent, and short circuits** for LiPo strips.                                |
+| **Protection Circuit Module (PCM)**                           | 1                             | **DW01 + 8205A PCM**    | ~1                                | 20x8x3                                 | Prevents **over-discharge, overcurrent, and short circuits** for LiPo strips.                                |
 
 ---
 
