@@ -23,9 +23,12 @@ Vibra Hands is an innovative gesture-based musical interface that allows users t
 
 #### 🛠️ Sensors & Electronics  
 
+  
+
 | **Component**                                                | **Quantity per Glove**        | **Brand / Model**                       | **Weight (g)**                   | **Dimensions (mm)**                     | **Purpose**                                                                                                  |
 |--------------------------------------------------------------|-------------------------------|----------------------------------------|----------------------------------|-----------------------------------------|-------------------------------------------------------------------------------------------------------------|
 | **IMU (BNO086)**                                              | 6                             | **Hillcrest Labs BNO086**               | ~1.2 each                        | 15x15x2                                | Tracks hand motion, acceleration, and tilt.                                                                  |
+| **TCA9548A I2C Multiplexer**                                  | 1                             | **Texas Instruments TCA9548A**         | ~1.5                              | 20x15x2                                | Manages I2C communication for 6 IMUs with a single SDA/SCL pair.                                             |
 | **Piezo Force Sensor (KSY Series)**                           | 6                             | **TDK KSY-15**                          | ~0.5 each                        | 10x10x0.5                              | Measures both **pressure and vibration** on fingers and palm.                                                |
 | **Haptic Piezo Motor (Vibration Motor)**                      | 1                             | **Precision Microdrives 307-100**       | ~1.5                              | 8x3                                   | Provides physical feedback for user actions on the palm.                                                     |
 | **Microcontroller (ESP32 WROVER)**                                   | 1                             | **ESP32 WROVER**    | ~5                                | 31x18x3                                | Processes sensor data and sends outputs.                                                                    |
